@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+
 <?php
 include "polacz.php";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -14,4 +16,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="submit" value="Dodaj książkę">
 </form>
 
-<a href="index.html">Powrót</a>
+<a href="index.php">Powrót</a>

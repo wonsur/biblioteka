@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <?php
 include "polacz.php";
 if (isset($_GET['usun'])) {
@@ -25,5 +26,5 @@ while ($row = mysqli_fetch_array($wynik, MYSQLI_ASSOC)) {
         <a href='edytuj_ucznia.php?usun={$row['id_ucznia']}'>Usuń</a>
     </form><br>";
 }
+echo "<a href='index.php'>Powrót</a>"
 ?>
-<a href="index.html">Powrót</a>

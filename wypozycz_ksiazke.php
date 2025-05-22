@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <?php
 include "polacz.php";
 if (isset($_POST['wypozycz'])) {
@@ -23,4 +24,5 @@ while ($row = mysqli_fetch_array($uczniowie, MYSQLI_ASSOC)) {
 echo "</select><br>";
 echo "<input type='submit' name='wypozycz' value='Wypożycz'>";
 echo "</form>";
+echo "<a href='index.php'>Powrót</a>"
 ?>

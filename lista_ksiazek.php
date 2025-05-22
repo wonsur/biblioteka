@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <?php
 include "polacz.php";
 $wynik = mysqli_query($conn, "SELECT ksiazki.*, uczniowie.imie, uczniowie.nazwisko FROM ksiazki LEFT JOIN uczniowie ON ksiazki.id_ucznia=uczniowie.id_ucznia");
@@ -9,4 +10,6 @@ while ($row = mysqli_fetch_array($wynik, MYSQLI_ASSOC)) {
     }
     echo "</div>";
 }
+echo "<a href='index.php'>Powrót</a>"
 ?>
+

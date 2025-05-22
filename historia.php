@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <?php
 include "polacz.php";
 $wynik = mysqli_query($conn, "SELECT wypozyczenia.*, ksiazki.tytul, uczniowie.imie, uczniowie.nazwisko FROM wypozyczenia JOIN ksiazki ON wypozyczenia.id_ksiazki=ksiazki.id_ksiazki JOIN uczniowie ON wypozyczenia.id_ucznia=uczniowie.id_ucznia ORDER BY wypozyczenia.id_wypozyczenia DESC");
@@ -10,5 +11,6 @@ while ($row = mysqli_fetch_array($wynik, MYSQLI_ASSOC)) {
     }
     echo "<br>";
 }
+echo "<a href='index.php'>Powrót</a>"
 ?>
-<a href="index.html">Powrót</a>
+

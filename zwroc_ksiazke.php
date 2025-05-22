@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <?php
 include "polacz.php";
 if (isset($_GET['zwroc'])) {
@@ -15,5 +16,6 @@ $wynik = mysqli_query($conn, "SELECT ksiazki.*, uczniowie.imie, uczniowie.nazwis
 while ($row = mysqli_fetch_array($wynik, MYSQLI_ASSOC)) {
     echo "{$row['tytul']} - {$row['autor']} (wypożyczona przez: {$row['imie']} {$row['nazwisko']}) <a href='zwroc_ksiazke.php?zwroc={$row['id_ksiazki']}'>Zwróć</a><br>";
 }
+echo "<a href='index.php'>Powrót</a>"
 ?>
-<a href="index.html">Powrót</a>
+

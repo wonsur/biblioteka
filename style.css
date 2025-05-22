@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    color: #D1C8E1;
+}
+
+body {
+    background-color: #87255B;
+
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 12%;
+    background-color: #B370B0;
+    border-radius: 20px;
+}
+
+.linkContainer:hover {
+    background-color: blue;
+    color: #BBA0CA;
+}
+
+.linksContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+
+a {
+    padding: 50px;
+    background-color: #B370B0;
+}
