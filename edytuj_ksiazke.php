@@ -21,3 +21,4 @@ while ($row = mysqli_fetch_array($wynik, MYSQLI_ASSOC)) {
     </form><br>";
 }
 ?>
+<a href="index.html">Powrót</a>

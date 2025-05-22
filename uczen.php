@@ -13,3 +13,4 @@ if ($uczen = mysqli_fetch_array($wynik, MYSQLI_ASSOC)) {
     echo "Nie znaleziono ucznia.";
 }
 ?>
+<a href="index.html">Powrót</a>

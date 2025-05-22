@@ -16,3 +16,4 @@ while ($row = mysqli_fetch_array($wynik, MYSQLI_ASSOC)) {
     echo "{$row['tytul']} - {$row['autor']} (wypożyczona przez: {$row['imie']} {$row['nazwisko']}) <a href='zwroc_ksiazke.php?zwroc={$row['id_ksiazki']}'>Zwróć</a><br>";
 }
 ?>
+<a href="index.html">Powrót</a>

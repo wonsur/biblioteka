@@ -11,3 +11,4 @@ while ($row = mysqli_fetch_array($wynik, MYSQLI_ASSOC)) {
     echo "<br>";
 }
 ?>
+<a href="index.html">Powrót</a>
