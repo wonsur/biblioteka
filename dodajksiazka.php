@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+<?php
+include "polacz.php";
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $tytul = $_POST['tytul'];
+    $autor = $_POST['autor'];
+    $sql = "INSERT INTO ksiazki (tytul, autor) VALUES ('$tytul', '$autor')";
+    mysqli_query($conn, $sql);
+    echo "Dodano książkę!";
+}
+?>
+<form method="post">
+    Tytuł: <input type="text" name="tytul"><br>
+    Autor: <input type="text" name="autor"><br>
+    <input type="submit" value="Dodaj książkę">
+</form>
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,14 +31,14 @@
     <input type="submit" value="Wyslij">
     </form>
     <?php
-        $tytul = $_POST['tytul'];
-        $autor = $_POST['autor'];
+        // $tytul = $_POST['tytul'];
+        // $autor = $_POST['autor'];
 
-        $c = mysqli_connect('localhost', 'root', '', 'biblioteka');
+        // $c = mysqli_connect('localhost', 'root', '', 'biblioteka');
 
-        mysqli_query($c, "INSERT INTO `ksiazki`(`tytul`, `autor`) VALUES ('$tytul','$autor')");
+        // mysqli_query($c, "INSERT INTO `ksiazki`(`tytul`, `autor`) VALUES ('$tytul','$autor')");
 
     ?>
 
 </body>
-</html>
+</html> -->
